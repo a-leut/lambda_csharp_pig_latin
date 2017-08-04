@@ -16,6 +16,11 @@ namespace BlueprintBaseName
         public string ToPigLatin(string input) 
         {
             input = input.ToLower();
+            // Easter egg
+            if (input == "csg" )
+            {
+                return "sgcay ocksray";
+            }
             var words = input.Split(new char[] {' '});
             for (int i=0; i < words.Length; i++)
             {

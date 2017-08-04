@@ -6920,16 +6920,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\EmptyFunction\\template\\src\\BlueprintBaseName\\BlueprintBaseName.csproj",
+      "projectUniqueName": "C:\\dev\\lambda_csharp_pig_latin\\template\\src\\BlueprintBaseName\\BlueprintBaseName.csproj",
       "projectName": "BlueprintBaseName",
-      "projectPath": "C:\\dev\\EmptyFunction\\template\\src\\BlueprintBaseName\\BlueprintBaseName.csproj",
-      "outputPath": "C:\\dev\\EmptyFunction\\template\\src\\BlueprintBaseName\\obj\\",
+      "projectPath": "C:\\dev\\lambda_csharp_pig_latin\\template\\src\\BlueprintBaseName\\BlueprintBaseName.csproj",
+      "outputPath": "C:\\dev\\lambda_csharp_pig_latin\\template\\src\\BlueprintBaseName\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.0"
       ],
       "files": {
-        "lib/netcoreapp1.0/BlueprintBaseName.dll": "C:\\dev\\EmptyFunction\\template\\src\\BlueprintBaseName\\bin\\placeholder\\netcoreapp1.0\\BlueprintBaseName.dll"
+        "lib/netcoreapp1.0/BlueprintBaseName.dll": "C:\\dev\\lambda_csharp_pig_latin\\template\\src\\BlueprintBaseName\\bin\\placeholder\\netcoreapp1.0\\BlueprintBaseName.dll"
       },
       "frameworks": {
         "netcoreapp1.0": {

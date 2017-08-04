@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import axios from 'axios';
 import './App.css';
+import './speech.css'
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {'response': 'none', 'value': ''};
+    this.state = {response: '', value: ''};
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.getUppercase = this.getUppercase.bind(this);
@@ -23,17 +24,24 @@ class App extends Component {
       });
   }
   handleChange(event) {
-    this.setState({'value': event.target.value});
+    this.setState({value: event.target.value});
   }
   handleSubmit(event) {
     event.preventDefault();
     this.getUppercase(this.state.value);
   }
   render() {
+    const re = this.state.response == '' ? null : 
+          <p className="triangle-right">
+            {this.state.response}
+          </p>
     return (
       <div className="App">
-        <div className="App-header">
-          <h2>Test Lambda App</h2>
+        <div className="Speech box">
+          {re}
+        </div>
+        <div>
+            <img src="http://i.imgur.com/gvytsS3.jpg" alt="flying pig" />
         </div>
           <form onSubmit={this.handleSubmit}>
             <label>
@@ -43,10 +51,6 @@ class App extends Component {
             <input type="text" value={this.state.value} onChange={this.handleChange} />
             <input type="submit" value="Submit" />
           </form>
-          <br/>
-          <div>
-            <h4>Lambda Response: {this.state.response}</h4>
-          </div>
       </div>
     );
   }
